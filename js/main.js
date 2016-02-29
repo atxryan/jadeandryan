@@ -14,30 +14,7 @@
 					'sec': 		0
 				} //,omitWeeks: true
 		});
-			
-
-
-
-		/* Hero height
-		================================================== */
-		var windowHeight = $(window).height();
 		
-		//$('.hero').height( windowHeight );
-		
-		$(window).resize(function() {
-			
-			var windowHeight = $(window).height();
-			$('.hero').height( windowHeight );
-			
-		});
-
-		// Menu settings
-		$('#menuToggle, .menu-close').on('click', function(){
-			$('#menuToggle').toggleClass('active');
-			$('body').toggleClass('body-push-toleft');
-			$('#theMenu').toggleClass('menu-open');
-		});
-			
 		/* Gallery
 		================================================== */
 		new Photostack( document.getElementById( 'photostack' ), {
@@ -70,17 +47,7 @@
 			} */
 		});
 		
-		//Home Background slider
-		jQuery.supersized({	
-		slide_interval          :   3000,		// Length between transitions
-		transition              :   1, 			// 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
-		transition_speed		:	700,		// Speed of transition				
-		slide_links				:	'blank',	// Individual links for each slide (Options: false, 'num', 'name', 'blank')
-		slides 					:  	[			// Slideshow Images
-										{image : 'photos/.gif'}
-									]
-		});	
-	
+		
 	
 			
 	});		
