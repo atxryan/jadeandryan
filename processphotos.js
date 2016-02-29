@@ -1,20 +1,26 @@
 var myfiles = [];
-var snippet;
+var snippet = '';
 var fs = require('fs');
 
 var arrayOfFiles = fs.readdirSync('./photos/');
 
-//Yes, the following is not super-smart, but you might want to process the files. This is how:
 arrayOfFiles.forEach( function (file) {
-    myfiles.push(file);
     
     snippet += `<figure>
-    <img src="photos/${file}" alt="img01" width="240" />
+    <img src="photos/${file}" alt="img01" width="300" />
     <figcaption>
         <h2 class="photostack-title"></h2>
     </figcaption>
     </figure>`
 });
-console.log(myfiles);
+
+fs.writeFile("processoutput.txt", snippet, function(err) {
+    if(err) {
+        return console.log(err);
+    }
+
+    console.log("The file was saved!");
+}); 
+
 console.log(snippet);
 

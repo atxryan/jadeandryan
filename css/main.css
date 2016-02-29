@@ -777,3 +777,7 @@ display:block;
 ==============================*/ 
 
 #supersized-loader {display: none;}
+
+.hero {
+    /*background: url("../img/header.png");*/
+}

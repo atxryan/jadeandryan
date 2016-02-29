@@ -24,11 +24,10 @@
 }
 
 .photostack figure {
-	width: 320px;
 	position: relative;
 	display: inline-block;
 	background: #fff;
-	padding: 40px;
+	padding: 15px;
 	text-align: center;
 	margin: 5px;
 }
@@ -131,6 +130,10 @@
 	transition-delay: 0.4s;
 }
 
+.photostack-current {
+    z-index: 200;
+}
+
 /* Overlays */
 
 /* Initial overlay on photostack container */
@@ -154,7 +157,7 @@
 
 /* Button on photostack container */
 .js .photostack::after {
-	content: '10 years of adventures and happiness';
+	content: 'Woah, 10 years!';
 	font-weight: 400;
 	position: absolute;
 	border: 3px solid #fff;
