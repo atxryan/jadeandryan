@@ -340,19 +340,19 @@ width:250px;
 
 /* This is where you change the path of the images for the couple */
 .ch-img-1 { 
-    background-image: url("../photos/jade.jpg");
+    background-image: url("../img/jade.jpg");
     background-repeat: no-repeat;
 }
 
 .ch-img-2 {
-    background-image: url("../photos/jade-ryan-gizmo.jpg");
+    background-image: url("../img/jade-ryan-gizmo.jpg");
     background-position-x: 0;
     background-position-y: 0;
 }
 
 
 .ch-img-3 { 
-    background-image: url("../photos/ryan.jpg");
+    background-image: url("../img/ryan.jpg");
     background-repeat: no-repeat;
 }
 
