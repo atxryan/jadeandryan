@@ -226,6 +226,10 @@ text-shadow: rgba(0, 0, 0, 0.6) 0px 1px 0px;
 	letter-spacing: 2px;
 	line-height:1.5em;
 }
+#headerwrap h3 {
+    color: white;
+    font-size: 25px;
+}
 
 #overlay {
 margin: 0px;
@@ -761,6 +765,9 @@ margin-bottom: 10px;
 font-size:40px;
 }
 
+
+
+
 .da-thumbs li {
 margin:7px;
 width: 45%;
@@ -779,5 +786,5 @@ display:block;
 #supersized-loader {display: none;}
 
 .hero {
-    /*background: url("../img/header.png");*/
+    background: url("../img/background.jpg");
 }
