@@ -6,12 +6,7 @@ var arrayOfFiles = fs.readdirSync('./photos/');
 
 arrayOfFiles.forEach( function (file) {
     
-    snippet += `<figure>
-    <img src="photos/${file}" alt="img01" width="300" />
-    <figcaption>
-        <h2 class="photostack-title"></h2>
-    </figcaption>
-    </figure>`
+    snippet += `<figure><img src="photos/${file}" alt="img01" width="300" /></figure>`;
 });
 
 fs.writeFile("processoutput.txt", snippet, function(err) {

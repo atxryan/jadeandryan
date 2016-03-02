@@ -7,9 +7,9 @@
 		jQuery('#countdown_dashboard').countDown({
 				targetDate: {
 					'day': 		30, // Put the date here
-					'month': 	5, // Month
+					'month': 	4, // Month
 					'year': 	2016, // Year
-					'hour': 	0,
+					'hour': 	14,
 					'min': 		0,
 					'sec': 		0
 				} //,omitWeeks: true
@@ -23,31 +23,6 @@
 			}
 		} );	
 			
-			/* Gallery popup
-		=================================================== */	
-		$('.photostack').magnificPopup({
-			delegate: 'a',
-			type: 'image',
-			tLoading: 'Loading image #%curr%...',
-			mainClass: 'mfp-img-mobile',
-			gallery: {
-				enabled: true,
-				navigateByImgClick: true,
-				preload: [0,1] // Will preload 0 - before current, and 1 after the current image
-			},
-			image: {
-				tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
-				titleSrc: function(item) {
-					return item.el.attr('title');
-				}
-			},
-			/* zoom: {
-				enabled: true,
-				duration: 300 // don't foget to change the duration also in CSS
-			} */
-		});
-		
-		
 	
 			
 	});		

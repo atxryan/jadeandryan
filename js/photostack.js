@@ -144,7 +144,7 @@
 
 		if( beforeStep ) {
 			this._shuffle();
-			this.el.addEventListener( 'click', open );
+			//this.el.addEventListener( 'click', open );
 		}
 		else {
 			open();
@@ -168,8 +168,10 @@
 				}
 			} );
 		} );
-
-		window.addEventListener( 'resize', function() { self._resizeHandler(); } );
+        
+        classie.addClass( self.el, 'photostack-transition' );
+		//window.addEventListener( 'resize', function() { self._resizeHandler(); } );
+        setInterval(function() { self._shuffle(); }, 6000);
 	}
 
 	Photostack.prototype._resizeHandler = function() {
@@ -184,6 +186,7 @@
 		this._resizeTimeout = setTimeout( delayed, 100 );
 	}
 
+        
 	Photostack.prototype._resize = function() {
 		var self = this, callback = function() { self._shuffle( true ); }
 		this._getSizes();
