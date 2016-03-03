@@ -284,7 +284,7 @@
 				}
 				// shuffle
 				grid = shuffleMArray(grid);
-
+               
 				var l = 0, c = 0, cntItemsAnim = 0;
 				self.allItems.forEach( function( item, i ) {
 					// pick a random item from the grid
@@ -335,7 +335,8 @@
 						item.style.WebkitTransform = 'translate(' + translation.x + 'px,' + translation.y + 'px) rotate(' + Math.floor( Math.random() * (maxrot - minrot + 1) + minrot ) + 'deg)';
 						item.style.msTransform = 'translate(' + translation.x + 'px,' + translation.y + 'px) rotate(' + Math.floor( Math.random() * (maxrot - minrot + 1) + minrot ) + 'deg)';
 						item.style.transform = 'translate(' + translation.x + 'px,' + translation.y + 'px) rotate(' + Math.floor( Math.random() * (maxrot - minrot + 1) + minrot ) + 'deg)';
-					}
+					    item.style["z-index"] = Math.floor(Math.random() * self.items.length) + 1  
+                    }
 
 					if( self.started ) {
 						if( support.transitions ) {
